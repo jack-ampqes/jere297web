@@ -55,3 +55,15 @@ html, body {
 .logo-wrapper:hover .logo-alt {
   opacity: 1;
 }
+
+.logo-wrapper a {
+    display: inline-block; /* Ensures the entire logo is clickable */
+    text-decoration: none; /* Removes any default link styling */
+}
+
+.logo-wrapper a img {
+    width: 100%; /* Adjust this as needed */
+    max-width: 200px; /* Control max size */
+    display: block;
+}
+
