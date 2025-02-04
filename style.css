@@ -19,8 +19,7 @@ html, body {
 
 /* Both logos share the same sizing and fade transition */
 .logo, .logo-alt {
-  width: 100
-    %;
+  width: 100%;
   height: auto;
   transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
 }
