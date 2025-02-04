@@ -35,20 +35,11 @@ html, body {
 }
 
 /* Ensure the logo inside scales properly */
-.logo-wrapper a {
-    width: 100%;
-    height: 100%;
-    display: flex;  /* Ensures the logo stays centered */
-    align-items: center;
-    justify-content: center;
-}
-
-/* Fix logo alignment inside the wrapper */
-.logo-wrapper a img {
-    width: 80%;  /* Adjust size */
-    height: auto;
-    display: block;
-    position: relative;  /* Remove absolute positioning */
+.logo, .logo-alt {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
 }
 
 /* Hide the alternate logo initially */
@@ -63,4 +54,15 @@ html, body {
 
 .logo-wrapper:hover .logo-alt {
   opacity: 1;
+}
+
+.logo-wrapper a {
+    display: inline-block; /* Ensures the entire logo is clickable */
+    text-decoration: none; /* Removes any default link styling */
+}
+
+.logo-wrapper a img {
+    width: 100%; /* Adjust this as needed */
+    max-width: 250px; /* Control max size */
+    display: block;
 }
