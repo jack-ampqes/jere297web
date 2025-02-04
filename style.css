@@ -17,20 +17,20 @@ html, body {
   z-index: -1;    /* Puts the video behind other content */
 }
 
+/* Both logos share the same sizing and fade transition */
 .logo, .logo-alt {
   width: 80%;
   height: auto;
-  transition: opacity 0.3s ease-in-out; /* Keep your fade effect */
-  /* position: absolute;  <-- removed */
+  transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
 }
 
-/* The alternate logo is still hidden initially */
+/* The alternate logo is hidden initially */
 .logo-alt {
   opacity: 0;
 }
 
+/* Container for the logos */
 .logo-wrapper {
-  /* This remains the same */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -46,3 +46,11 @@ html, body {
   transition: all 0.3s ease-in-out;
 }
 
+/* Swap logos on hover */
+.logo-wrapper:hover .logo {
+  opacity: 0;
+}
+
+.logo-wrapper:hover .logo-alt {
+  opacity: 1;
+}
