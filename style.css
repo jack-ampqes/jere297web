@@ -7,15 +7,14 @@ html, body {
 }
 
 /* Make sure the video fills the entire viewport */
-.video-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;   /* Full viewport width */
-  height: 100vh;  /* Full viewport height */
-  object-fit: cover; /* Ensures video covers the container while maintaining aspect ratio */
-  z-index: -1;    /* Puts the video behind other content */
-}
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;   /* Full viewport width */
+      height: 100vh;  /* Full viewport height */
+      object-fit: cover; /* Ensures video covers the container while maintaining aspect ratio */
+      z-index: -1;    /* Puts the video behind other content */
 
 /* Logo wrapper to create a circular hover effect */
 .logo-wrapper {
