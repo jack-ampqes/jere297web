@@ -11,25 +11,13 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;   /* Full viewport width */
-  height: 100vh;  /* Full viewport height */
-  object-fit: cover; /* Ensures video covers the container while maintaining aspect ratio */
-  z-index: -1;    /* Puts the video behind other content */
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
 
-/* Both logos share the same sizing and fade transition */
-.logo, .logo-alt {
-  width: 80%;
-  height: auto;
-  transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
-}
-
-/* The alternate logo is hidden initially */
-.logo-alt {
-  opacity: 0;
-}
-
-/* Container for the logos */
+/* Logo wrapper (green circle) */
 .logo-wrapper {
   position: absolute;
   top: 50%;
@@ -41,9 +29,22 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   background-color: #135338;
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* Logos inside the wrapper */
+.logo, .logo-alt {
+  position: absolute;
+  width: 60%;  /* Adjust for perfect centering */
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Alternate logo is hidden by default */
+.logo-alt {
+  opacity: 0;
 }
 
 /* Swap logos on hover */
