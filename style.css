@@ -63,7 +63,7 @@ html, body {
 
 .logo-wrapper a img {
     width: 100%; /* Adjust this as needed */
-    max-width: 200px; /* Control max size */
+    max-width: 250px; /* Control max size */
     display: block;
 }
 
