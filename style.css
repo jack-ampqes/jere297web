@@ -1,12 +1,12 @@
-/* Reset margins and set full height */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-}
+    /* Reset margins and set full height */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
 
-/* Make sure the video fills the entire viewport */
+    /* Make sure the video fills the entire viewport */
     .video-bg {
       position: fixed;
       top: 0;
@@ -15,42 +15,43 @@ html, body {
       height: 100vh;  /* Full viewport height */
       object-fit: cover; /* Ensures video covers the container while maintaining aspect ratio */
       z-index: -1;    /* Puts the video behind other content */
+    }
 
-/* Logo wrapper to create a circular hover effect */
-.logo-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 250px; /* Adjust based on actual logo size */
-  height: 250px; /* Ensure a perfect circle */
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* Ensures anything outside the circle is cut off */
-  background-color: #135338; /* Dark green background for logo */
-  transition: all 0.3s ease-in-out;
-}
+    /* Logo wrapper to create a circular hover effect */
+    .logo-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 250px; /* Adjust based on actual logo size */
+      height: 250px; /* Ensure a perfect circle */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden; /* Ensures anything outside the circle is cut off */
+      background-color: #135338; /* Dark green background for logo */
+      transition: all 0.3s ease-in-out;
+    }
 
-/* Ensure the logo inside scales properly */
-.logo, .logo-alt {
-  width: 80%;
-  height: auto;
-  position: absolute;
-  transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
-}
+    /* Ensure the logo inside scales properly */
+    .logo, .logo-alt {
+      width: 80%;
+      height: auto;
+      position: absolute;
+      transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+    }
 
-/* Hide the alternate logo initially */
-.logo-alt {
-  opacity: 0;
-}
+    /* Hide the alternate logo initially */
+    .logo-alt {
+      opacity: 0;
+    }
 
-/* When hovering over the wrapper, fade out the original logo and fade in the alternate */
-.logo-wrapper:hover .logo {
-  opacity: 0;
-}
+    /* When hovering over the wrapper, fade out the original logo and fade in the alternate */
+    .logo-wrapper:hover .logo {
+      opacity: 0;
+    }
 
-.logo-wrapper:hover .logo-alt {
-  opacity: 1;
-}
+    .logo-wrapper:hover .logo-alt {
+      opacity: 1;
+    }
