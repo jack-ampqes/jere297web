@@ -37,7 +37,7 @@ html, body {
 /* Logos inside the wrapper */
 .logo, .logo-alt {
   position: absolute;
-  width: 60%;  /* Adjust for perfect centering */
+  width: 100%;  /* Adjust for perfect centering */
   height: auto;
   transition: opacity 0.3s ease-in-out;
 }
