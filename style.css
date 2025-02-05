@@ -26,17 +26,16 @@ html, body {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  display: flex; /* Use flexbox for centering */
   align-items: center;
   justify-content: center;
   overflow: hidden;
   background-color: #135338;
   transition: all 0.3s ease-in-out;
-  position: relative; /* Ensure child elements position correctly */
 }
 
 /* Logos inside the wrapper */
 .logo, .logo-alt {
-  position: absolute;
   width: 80%;
   height: auto;
   transition: opacity 0.3s ease-in-out;
